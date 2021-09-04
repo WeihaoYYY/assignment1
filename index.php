@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="Assignment 1">
     <meta name="viewport" author="Weihao Yue">
+    <link href= "styles/styles.css" rel="stylesheet" />
     <title>Index</title>
 </head>
 <body>
-    <h1>Job Vacancy Posting System</h1>  //TODO CSS要居中
+    <header><h1>Job Vacancy Posting System</h1></header> 
     <hr>
-    <p>Name: Weihao Yue</p>
-    <p>Student ID: 102246657</p>
-    <p>Email: 102246657@student.swin.edu.au </p>
+
+    <div class="center" >
+    <p><strong>Name:</strong> Weihao Yue</p>
+    <p><strong>Student ID:</strong> 102246657</p>
+    <p><strong>Email:</strong> 102246657@student.swin.edu.au </p>
     <p><strong>I declare that this assignment is my individual work. I have not worked collaboratively 
         nor have I copied from any other student’s work or from any other source</strong></p>
+    </div>
 
+    <footer>
     <a href="postjobform.php">Post a job vacancy </a>
     <a href="searchjobform.php">Search for a job vacancy</a>
     <a href="about.php">About this assignment</a>
+    </footer>
+    
 
 </body>
 </html>
