@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="Assignment 1">
     <meta name="viewport" author="Weihao Yue">
-    <title>post job process</title>
+    <link href= "styles/styles.css" rel="stylesheet" />
 </head>
 <body>
+<header class="form"><h1>Job posting</h1></header>
+<div class="center" >
     <?php
         $errMsg = "";
         /*
@@ -92,16 +94,20 @@
 			$handle = fopen($filename, "a+");
 						fwrite($handle, $data);
 						fclose($handle);
-            echo "<p>All data are written into file</p>";
+            echo '<p style="color: green">All data are written to '.$filename.'</p>';
             
         }else{
-            echo $errMsg;
+            echo '<p class="error" style="color: red">'.$errMsg.'</p>';
         }
 
-    ?>
 
-    <a href="index.php">Index</a>
-    <a href="postjobform.php">form page</a>
+    ?>
+</div>
+<footer>
+    <a href="postjobform.php" class ="a">Post a job vacancy </a>
+    <a href="searchjobform.php" class ="b">Search for a job vacancy</a>
+    <a href="about.php" class ="c">About this assignment</a>
+    </footer>
     
 </body>
 </html>

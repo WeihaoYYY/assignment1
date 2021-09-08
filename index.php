@@ -8,7 +8,7 @@
     <title>Index</title>
 </head>
 <body>
-    <header><h1>Job Vacancy Posting System</h1></header> 
+    <header class="index"><h1>Job Vacancy Posting System</h1></header> 
     <hr>
 
     <div class="center" >
@@ -20,9 +20,9 @@
     </div>
 
     <footer>
-    <a href="postjobform.php">Post a job vacancy </a>
-    <a href="searchjobform.php">Search for a job vacancy</a>
-    <a href="about.php">About this assignment</a>
+    <a href="postjobform.php" class ="a">Post a job vacancy </a>
+    <a href="searchjobform.php" class ="b">Search for a job vacancy</a>
+    <a href="about.php" class ="c">About this assignment</a>
     </footer>
     
 

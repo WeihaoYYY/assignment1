@@ -11,8 +11,8 @@
     <?php
 
         $select = "null";
-        if(isset($_GET['title'])){
-            $title = $_GET['title'];
+        if(isset($_GET['Title'])){
+            $title = $_GET['Title'];
         } 
         else
             $title ="null";
@@ -44,7 +44,7 @@
         if(isset($_GET['state'])){
             $state = $_GET['state'];
             if($state == "---")
-                $state = "VICNSWQLDNTWASATASACT";
+                $state = "all";
                 
         } 
 
@@ -54,6 +54,7 @@
         $select = $select."\t".$title."\t".$desc."\t".$date."\t".$position."\t".$contract."\t".$post."\t".$email."\t".$state;
  
         $details = explode("\t", $select);
+        echo $select;
 
         
 
@@ -69,20 +70,30 @@
                 $i = 0;
 
                 while($i < 9){
-                    if(strcmp($details[$i], "null") == 0){
+                    if($details[$i] == "null"){
                         $i++;
-                        continue;
-                        echo 'continue <br>';
+                        echo 'continue '.$i.' <br>';
+                        continue; 
                     }
-                    //没找到就返回false，找到就返回数字(就不返回false)
-                    if(strpos($details[$i], $info[$i]) === false)
-	                    break;
-                    elseif($i ==8)
+
+                    echo "$i  ";
+                    echo $info[$i];  
+                    echo "  ";    
+                    echo "+ $details[$i]";
+                    echo "<p></p>";
+
+                    if($details[$i] != $info[$i] && $i !=8){
+                        echo"breaking $i";
+                        break;
+                    }elseif($details[8] == "all" && $i == 8) { 
                         showHand($data);
+                    }elseif($details[8] == $info[8] && $i == 8){
+                        showHand($data);
+                    }
                     $i++;
                 }
 
-                
+                echo "<p>------next-------</p>";
         }
         
     }

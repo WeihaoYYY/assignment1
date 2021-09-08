@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="Assignment 1">
     <meta name="viewport" author="Weihao Yue">
     <title>job form</title>
+    <link href= "styles/styles.css" rel="stylesheet" />
 </head>
 <body>
-<h1>Job Vacancy Posting System</h1>
+<header class="form"><h1>Job posting</h1></header> 
     <form action="postjobprocess.php" method="post">
 
     <p><label for="PID">Position ID</label>
@@ -64,10 +65,14 @@
     <input type="reset" value="Reset">
 
     </form>
-    //TODO what part should i use php sytax and what part should i use php sytax? echo or h3?
 
     <p>All fields are required</p>
-    <a href="index.php">Return to home page</a>
+
+    <footer>
+    <a href="postjobform.php" class ="a">Post a job vacancy </a>
+    <a href="searchjobform.php" class ="b">Search for a job vacancy</a>
+    <a href="about.php" class ="c">About this assignment</a>
+    </footer>
 
 
 </body>

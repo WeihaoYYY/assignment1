@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="Assignment 1">
     <meta name="viewport" author="Weihao Yue">
+    <link href= "styles/styles.css" rel="stylesheet" />
     <title>job search</title>
 </head>
 
 <body>
-<h1>Search page</h1>
-    <form action="advance.php" method="get">
 
+<header class="search"><h1>Job searching</h1></header> 
+    <form action="advance.php" method="get">
+    <div class="center">
     <p><label for="title">Title</label>
-    <input type="text" name="Title" maxlength="20" ><br></p>
+    <input type="text" name="Title" maxlength="20" ></p>
     
     <fieldset>
     <legend>Position</legend>
-    <p><input type="radio" name="position" value="full" id="full"  >Full Time</p>
-    <p><input type="radio" name="position" value="part" id="part">Part Time</p>
+    <p><label for="full">Full time</label>
+    <input type="radio" name="position" value="full" id="full"></p>
 
+    <p><label for="part">part time</label>
+    <input type="radio" name="position" value="part" id="part"></p>
     </fieldset>
+    </div>
     
     <fieldset>
     <legend>Contract</legend>
@@ -55,8 +60,11 @@
 
     </form>
 
-    <p>All fields are required</p>
-    <a href="index.php">Return to home page</a>
+    <footer>
+    <a href="postjobform.php" class ="a">Post a job vacancy </a>
+    <a href="searchjobform.php" class ="b">Search for a job vacancy</a>
+    <a href="about.php" class ="c">About this assignment</a>
+    </footer>
 
 
 </body>
