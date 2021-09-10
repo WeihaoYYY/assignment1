@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="Assignment 1">
     <meta name="viewport" author="Weihao Yue">
-    <link href= "styles/styles.css" rel="stylesheet" />
+    <link href= "styles.css" rel="stylesheet" />
     <title>Index</title>
 </head>
 <body>

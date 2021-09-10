@@ -14,6 +14,10 @@ header.form{
 background: #3c569e;
 }
 
+header.about{ 
+    background: #833194;
+    }
+
 header.search{ 
     background: #378b7d;
     }

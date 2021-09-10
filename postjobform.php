@@ -5,24 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="Assignment 1">
     <meta name="viewport" author="Weihao Yue">
     <title>job form</title>
-    <link href= "styles/styles.css" rel="stylesheet" />
+    <link href= "styles.css" rel="stylesheet" />
 </head>
 <body>
-<header class="form"><h1>Job posting</h1></header> 
+<header class="form"><h1>Search result</h1></header> 
     <form action="postjobprocess.php" method="post">
 
     <p><label for="PID">Position ID</label>
-    <input type="text" name="PID" maxlength="5" placeholder="P0001"  ><br> </p> //pattern="^P\d{4}$"
+    <input type="text" name="PID" maxlength="5" placeholder="P0001" pattern="^P\d{4}$" required ><br> </p> 
 
     <p><label for="jobTitle">Title</label>
-    <input type="text" name="jobTitle" maxlength="20" ><br></p>
+    <input type="text" name="jobTitle" maxlength="20" $pattern = "/^[a-zA-Z0-9\,\.\ \!]{1,20}$/" required><br></p>
     
     <p><label for="desc">Description</label>
-    <textarea name="desc" id="" cols="30" rows="10"  placeholder="Job description"></textarea><br></p>
+    <textarea name="desc" id="" cols="30" rows="10"  placeholder="Job description" $pattern = "/^.{1,260}$/" required></textarea><br></p>
 
     <p>
-    <input type="text" name="date" id="dob" maxlength="10" size="10" placeholder=<?php echo date("d/m/Y"); ?>
-     title="dd/mm/yyyy" ><br></p> //pattern="\d{1,2}/\d{1,2}/\d{4}"
+    <input type="text" name="date" id="dob" maxlength="10" size="10" required placeholder=<?php echo date("d/m/Y"); ?>
+     title="dd/mm/yyyy" pattern="\d{1,2}/\d{1,2}/\d{4}" ><br></p> 
 
     
     <fieldset>
